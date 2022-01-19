@@ -8,7 +8,7 @@ import GoogleLogin from 'react-google-login';
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props'
 import MicrosoftLogin from 'react-microsoft-login';
 
-function Register(props){
+function Register(props) {
   // const [googlePic, setGooglePic] = useState(false);
   const responseGoogle = (response) => {
     console.log(response);
@@ -154,27 +154,27 @@ function Register(props){
                   cookiePolicy={'single_host_origin'}
                 />
                 <FacebookLogin
-                    appId="338268931267774"
-                    autoLoad={true}
-                    fields="name,email,picture"
-                    callback={responseFacebook} 
-                    render={renderProps => (
-                      <img
+                  appId="338268931267774"
+                  autoLoad={true}
+                  fields="name,email,picture"
+                  callback={responseFacebook}
+                  render={renderProps => (
+                    <img
                       src={facebook}
                       alt="icon"
                       onClick={renderProps.onClick}
                       disabled={renderProps.disabled}
                       className='googleLogin' />
-  )}
-                    />  
+                  )}
+                />
               </a>
               <MicrosoftLogin
-                  clientId='20f6ac1d-78ac-4c7e-b5ca-04492ff1c3c7'
-                  authCallback={authHandler}
-                  className='ml'
-                >
-                  <img src={microsoft} alt='icon' />
-                </MicrosoftLogin>
+                clientId='20f6ac1d-78ac-4c7e-b5ca-04492ff1c3c7'
+                authCallback={authHandler}
+                className='ml'
+              >
+                <img src={microsoft} alt='icon' />
+              </MicrosoftLogin>
             </div>
           </form>
         </div>

@@ -1,119 +1,116 @@
-@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orelega+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 body {
-    font-family: Assistant, sans-serif;
-    display: flex;
-    min-height: 100vh;
-  }
-  .bubbles img{
-    width: 50px;
-    animation: bubbles 7s linear infinite;
+  font-family: Assistant, sans-serif;
+  display: flex;
+  min-height: 100vh;
+}
+.bubbles img {
+  width: 50px;
+  animation: bubbles 7s linear infinite;
 }
 @keyframes bubbles {
-    0%{
-        transform: translateY(0);
-        opacity: 0;
-    }
-    50%{
-        opacity: 1;
-    }
-    70%{
-        opacity: 1;
-    }
-    100%{
-        transform: translateY(-70vh);
-        opacity: 0;
-    }
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-70vh);
+    opacity: 0;
+  }
 }
-  .login {
-    color: white;
-    background: url(../../images/background.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background: 
-      -webkit-linear-gradient(to right, #267871, #136a8a);
-    margin: auto;
-     box-shadow: 
-      0px 2px 5px rgba(0,0,0,0.2), 
-      0px 5px 10px rgba(0,0,0,0.3), 
-      0px 5px 5px 1px rgba(0,0,0,0.5); 
-    border-radius: 8px;
-    padding: 50px;
-    height: 80vh;
-  }
-  .login .head {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .login .head .company {
-    font-size: 2.2em;
-    font-family: 'Orelega One', cursive;
-  }
-  .login .msg {
-    text-align: center;
-  }
-  .login .form input[type=text].text {
-    border: none;
-    background: none;
-    box-shadow: 0px 2px 0px 0px white;
-    width: 100%;
-    color: white;
-    font-size: 1em;
-    outline: none;
-  }
-  .login .form .text::placeholder {
-    color: #D3D3D3;
-  }
-  .login .form input[type=password].password {
-    border: none;
-    background: none;
-    box-shadow: 0px 2px 0px 0px white;
-    width: 100%;
-    color: white;
-    font-size: 1em;
-    outline: none;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-  input{
-    text-align: center;
-  }
-  .login .form .password::placeholder {
-    color: #D3D3D3;
-    text-align: center;
-  }
-  .login .form .btn-login {
-    background: none;
-    text-decoration: none;
-    color: #111;
-    font-weight: bolder;
-    box-shadow: 0px 0px 0px 2px white;
-    border-radius: 3px;
-    padding: 5px 2em;
-    transition: 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .login .form .btn-login:hover {
-    background: grey;
-    transform: scale(0.99s);
-    color: black;
-    transition: 0.5s;
-  }
-  .login .forgot {
-    text-decoration: none;
-    color: white;
-    float: right;
-  }
-  .forgot:hover{
-    color: red;
-    text-decoration: underline;
-    text-decoration-color: whitesmoke;
-    text-decoration-skip-ink: auto;
-    font-weight: bolder;
-    font-family: 'Righteous', cursive;
-    text-underline-offset: 0.2em;
-  }
+.login {
+  color: white;
+  background: url(../../images/background.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background: -webkit-linear-gradient(to right, #267871, #136a8a);
+  margin: auto;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2), 0px 5px 10px rgba(0, 0, 0, 0.3),
+    0px 5px 5px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 50px;
+  height: 80vh;
+}
+.login .head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login .head .company {
+  font-size: 2.2em;
+  font-family: "Orelega One", cursive;
+}
+.login .msg {
+  text-align: center;
+}
+.login .form input[type="text"].text {
+  border: none;
+  background: none;
+  box-shadow: 0px 2px 0px 0px white;
+  width: 100%;
+  color: white;
+  font-size: 1em;
+  outline: none;
+}
+.login .form .text::placeholder {
+  color: #d3d3d3;
+}
+.login .form input[type="password"].password {
+  border: none;
+  background: none;
+  box-shadow: 0px 2px 0px 0px white;
+  width: 100%;
+  color: white;
+  font-size: 1em;
+  outline: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+input {
+  text-align: center;
+}
+.login .form .password::placeholder {
+  color: #d3d3d3;
+  text-align: center;
+}
+.login .form .btn-login {
+  background: none;
+  text-decoration: none;
+  color: #111;
+  font-weight: bolder;
+  box-shadow: 0px 0px 0px 2px white;
+  border-radius: 3px;
+  padding: 5px 2em;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login .form .btn-login:hover {
+  background: grey;
+  transform: scale(0.99s);
+  color: black;
+  transition: 0.5s;
+}
+.login .forgot {
+  text-decoration: none;
+  color: white;
+  float: right;
+}
+.forgot:hover {
+  color: red;
+  text-decoration: underline;
+  text-decoration-color: whitesmoke;
+  text-decoration-skip-ink: auto;
+  font-weight: bolder;
+  font-family: "Righteous", cursive;
+  text-underline-offset: 0.2em;
+}

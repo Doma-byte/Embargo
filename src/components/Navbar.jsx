@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-function Navbar(props) {
+function Navbar({sticky}) {
   const [isActive, setIsActive] = useState(false);
   const toggleClass = () => {
     setIsActive(!isActive);
@@ -12,7 +12,7 @@ function Navbar(props) {
       <div className="page-wrapper">
         <div className="nav-wrapper">
           <div className="grad-bar"></div>
-          <nav className="navbar">
+          <nav className={sticky?"navbar navbar-sticky":"navbar"}>
             <div className='logo'>
               <a href='/'>
                 <img src={logo} alt='Embargo icon' id="log" loading='lazy' />
@@ -24,7 +24,7 @@ function Navbar(props) {
               <span className="bar"></span>
             </div>
             <div className='link-background'>
-              <ul className="nav no-search" >
+              <ul className="nav no-search">
                 <li className="nav-item home left special"><NavLink exact="true" to="/" id='underline'>Home</NavLink></li>
                 <li className="nav-item left special"><NavLink exact="true" to="/aboutMe" id='underline'>About Me</NavLink></li>
                 <li className="nav-item left special"><NavLink exact="true" to="/careers" id='underline1'>Careers</NavLink></li>

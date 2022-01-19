@@ -16,7 +16,7 @@ function Login(props) {
   const authHandler = (err, data) => {
     console.log(err, data);
   }
-  const responseFacebook = (response)=>{
+  const responseFacebook = (response) => {
     console.log(response);
   }
   const myStyle = {
@@ -99,32 +99,32 @@ function Login(props) {
                 cookiePolicy={'single_host_origin'}
               />
               <FacebookLogin
-                    appId="338268931267774"
-                    autoLoad={true}
-                    fields="name,email,picture"
-                    callback={responseFacebook} 
-                    render={renderProps => (
-                      <img
-                      src={facebook}
-                      alt="icon"
-                      onClick={renderProps.onClick}
-                      disabled={renderProps.disabled}
-                      className='googleLogin' />
-  )}
-                    />  
+                appId="338268931267774"
+                autoLoad={true}
+                fields="name,email,picture"
+                callback={responseFacebook}
+                render={renderProps => (
+                  <img
+                    src={facebook}
+                    alt="icon"
+                    onClick={renderProps.onClick}
+                    disabled={renderProps.disabled}
+                    className='googleLogin' />
+                )}
+              />
             </div>
           </a>
           <MicrosoftLogin
-              clientId='20f6ac1d-78ac-4c7e-b5ca-04492ff1c3c7'
-              authCallback={authHandler}
-              className='div2'
-            >
-              <img
-                src={microsoft}
-                alt='icon'
-                title='Login with Microsoft'
-                className='microsoftLogin' />
-            </MicrosoftLogin>
+            clientId='20f6ac1d-78ac-4c7e-b5ca-04492ff1c3c7'
+            authCallback={authHandler}
+            className='div2'
+          >
+            <img
+              src={microsoft}
+              alt='icon'
+              title='Login with Microsoft'
+              className='microsoftLogin' />
+          </MicrosoftLogin>
         </div>
         <div className='form'>
           <form action='/'>
