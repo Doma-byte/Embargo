@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+.chat_loginContainer {
+  display: flex;
+  flex-direction: row;
+  transition: 2s;
+  font-family: "Poppins", sans-serif;
+  padding: 100px;
+}
+.chat_loginButton {
+  display: inline;
+  width: 174px;
+  height: 54px;
+  font-family: sans-serif;
+  font: inherit;
+  cursor: pointer;
+  font-weight: 600;
+  border: 0;
+  outline: 0;
+  border-radius: 30px 30px 30px 5px;
+  margin-right: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-transform: none;
+  overflow: visible;
+}
+button:hover {
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+.chat_login_bt {
+  background: blue;
+  color: #fff;
+}
+h1,
+h2,
+h4 {
+  display: block;
+}
+.chat_loginText {
+  position: relative;
+  margin-top: 50px;
+}
+.chat_loginText > h1 {
+  font-size: 2.5em;
+  font-weight: 800;
+  line-height: 44px;
+  align-items: center;
+  color: transparent;
+  -webkit-text-stroke: 1px #111;
+  background: #111;
+  background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+.chat_loginText > h2 {
+  color: darkblue;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 300;
+  width: 73%;
+  margin: 20px 0 0 0;
+  max-width: 700px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.chat_loginText > h4 {
+  color: #111;
+  font-family: "Ubuntu Mono", cursive;
+  font-size: 20px;
+  line-height: 15px;
+  font-weight: bold;
+  margin-left: 80px;
+}

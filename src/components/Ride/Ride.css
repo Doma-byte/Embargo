@@ -1,0 +1,94 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ride_container {
+  display: grid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  animation: animate 60s ease-in-out infinite;
+  background-size: cover;
+  place-items: center;
+}
+.ride_back {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+@keyframes animate {
+  0%,
+  100% {
+    background-image: url("../../images/ride1.jpg"),
+      url("../../images/ride2.jpg");
+  }
+  25% {
+    background-image: url("../../images/ride2.jpg"),
+      url("../../images/212461.jpg");
+  }
+  50% {
+    background-image: url("../../images/212461.jpg"),
+      url("../../images/2416653.jpg");
+  }
+  75% {
+    background-image: url("../../images/2416653.jpg"),
+      url("../../images/ride1.jpg");
+  }
+}
+.ride_modal {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 15px;
+  width: 40vw;
+  height: 90vh;
+  margin-right: auto;
+  min-height: 80vh;
+  margin-left: 50px;
+}
+.ride_nav {
+  background: #e0e0e0;
+  display: flex;
+  flex-direction: row;
+  border: none;
+  height: 20%;
+  border-bottom: 1px solid lightgray;
+  margin-left: 20px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 15px 15px 0 0;
+}
+.ride1wrap,
+.ride2wrap {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+.ride1wrap .icon1,
+.ride2wrap .icon2 {
+  margin-top: 5px;
+}
+.icon1_h,
+.icon2_h {
+  padding: 9px;
+  line-height: 16px;
+  font-size: 15px;
+  font-weight: 650;
+  cursor: pointer;
+  font-family: system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* .icon1_h{
+    border-bottom: 5px solid #111;
+} */
