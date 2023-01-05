@@ -1,4 +1,4 @@
-# EMBARGO - A Ride Sharing PlatForm
+# EMBARGO - A Ride Sharing PlatForm ⛑️⛑️
 
 With Music, Chats and maps.
 
